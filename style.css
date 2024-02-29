@@ -1,46 +1,97 @@
-
 header {
     background-color: #333;
-   display: flex;
-    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
 }
 
 header img {
-    padding: 30px;;
+    margin: 10px 10px 10px 260px;
 }
 
-nav ul {
+nav {
     display: flex;
-    flex-direction: row;
-    color: darkgrey;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    align-items: center;
+    
+}
+nav div {
+    color: darkgray;
+    justify-content: space-between;
+    padding: 30px;
 }
 
-nav ul li {
-    display: inline;
-    text-align: center;
-    padding: 10px;
-}
-
-
-body > img:last-of-type {
-    width: 480px;
-    height: 400px;
-    object-fit: cover;
-    float: left;
-    clear: both;
-    margin-bottom: 20px; 
-}
 
 section {
-    margin-left: 520px; /* Adjust according to the image width plus some extra space */
+        display: flex;
+        margin: 30px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+section img {
+    display: flex;
+    align-items: center;
 }
 
+div {
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div img { 
+    display: inline-flex;
+    padding: 15px;
+    align-content: flex-start;
+}
+
+main img {
+    margin: 0 0 0 230px;
+    padding: 30px;
+}
+
+main section {
+    display: block;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+div p {
+    height: 300px; 
+    width: 390px;
+    overflow: auto; 
+}
+
+p {
+    font-style: oblique;
+    font-size: medium;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+main {
+    display: flex;
+    padding-bottom: 80px; /* Adjusted to accommodate the height of the footer */
+}
 
 footer {
-    position: fixed;
     background-color: #333;
-
+    color: #333;
+    display: block;
+    position: fixed;
+    padding-top: 30px;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
 }
